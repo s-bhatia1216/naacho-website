@@ -1,73 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Naacho Dance Company</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Fonts: Raleway, Montserrat, Nunito -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
-    <!-- Tab Icon -->
-    <link rel="icon" type="image/png" href="pictures/logo.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Naacho Dance Company</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Fonts: Raleway, Montserrat, Nunito -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
+  <!-- Tab Icon -->
+  <link rel="icon" type="image/png" href="images/naachotext.jpeg" />
+
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Raleway', 'Montserrat', 'Nunito', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Ensure the navbar background remains black */
+    .navbar {
+      background-color: #000 !important;
+    }
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    .nav-link {
+      color: #fff !important;
+    }
+    .nav-link:hover,
+    .nav-item.active .nav-link {
+      color: #e60000 !important;
+    }
+    /* Explicitly set container background to black */
+    .container {
+      background-color: #000;
+    }
+    footer {
+      background-color: #000 !important;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="homePage.html">Naacho</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="homePage.html">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="members.html">Members</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shows.html">Shows</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact_us.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- About Us Section -->
-    <div class="container text-center" style="margin-top: 100px;">
-        <h1>About Us</h1>
-        <p>Information about Naacho Dance Company...</p>
-        <p>Founded in 1999, Naacho has been a place for students bond over their love for dance, South Asian music, cultures, and friends! </p>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Naacho Dance Company. All rights reserved.</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#" class="text-white">Facebook</a></li>
-            <li class="list-inline-item"><a href="#" class="text-white">Instagram</a></li>
-            <li class="list-inline-item"><a href="#" class="text-white">Twitter</a></li>
+  <!-- Navigation Bar (Replicated from homePage.html) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="homePage.html">
+            <img src="images/naachotext.jpeg" alt="Naacho Logo">
+        </a>    
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="homePage.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="members.html">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shows.html">Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact Us</a>
+          </li>
         </ul>
-    </footer>
+      </div>
+    </div>
+  </nav>
 
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- About Us Section -->
+  <div class="container text-center" style="margin-top: 100px;">
+    <h1>About Us</h1>
+    <p>Information about Naacho Dance Company...</p>
+    <p>Founded in 1999, Naacho has been a place for students to bond over their love for dance, South Asian music, culture, and friends!</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-white text-center py-3">
+    <p>&copy; 2025 Naacho Dance Company. All rights reserved.</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="https://www.facebook.com/PrincetonNaacho/" class="text-white">Facebook</a></li>
+      <li class="list-inline-item"><a href="https://www.instagram.com/princeton_naacho/" class="text-white">Instagram</a></li>
+      <li class="list-inline-item"><a href="https://www.youtube.com/@PrincetonNaacho" class="text-white">YouTube</a></li>
+    </ul>
+  </footer>
+
+  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
