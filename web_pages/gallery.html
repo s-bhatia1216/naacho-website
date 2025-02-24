@@ -1,72 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Naacho Dance Company</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Fonts: Raleway, Montserrat, Nunito -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
-    <!-- Tab Icon -->
-    <link rel="icon" type="image/png" href="pictures/logo.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Naacho Dance Company</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Fonts: Raleway, Montserrat, Nunito -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
+  <!-- Tab Icon -->
+  <link rel="icon" type="image/png" href="pictures/logo.png" />
+  <style>
+    /* Sticky footer using Flexbox */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .content {
+      flex: 1;
+    }
+    /* Global Styles */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Raleway', 'Montserrat', 'Nunito', sans-serif;
+    }
+    .container {
+      background-color: #000;
+    }
+    /* Navbar Styles */
+    .navbar {
+      background-color: #000 !important;
+    }
+    .navbar-brand img {
+      height: 40px;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+    }
+    .nav-link {
+      color: #fff !important;
+    }
+    .nav-link:hover,
+    .nav-item.active .nav-link {
+      color: #e60000 !important;
+    }
+    /* Collage Styles */
+    .collage {
+      column-count: 3;
+      column-gap: 1rem;
+      margin-top: 30px;
+    }
+    .collage img {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    /* Footer Styles */
+    footer {
+      background-color: #000 !important;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="homePage.html">Naacho</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="homePage.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="members.html">Members</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shows.html">Shows</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact_us.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Gallery Section -->
-    <div class="container text-center" style="margin-top: 100px;">
-        <h1>Gallery</h1>
-        <p>Photos and videos from our events...</p>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Naacho Dance Company. All rights reserved.</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#" class="text-white">Facebook</a></li>
-            <li class="list-inline-item"><a href="#" class="text-white">Instagram</a></li>
-            <li class="list-inline-item"><a href="#" class="text-white">Twitter</a></li>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="homePage.html">
+        <img src="images/naachotext.jpeg" alt="Naacho Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+              data-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="homePage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="members.html">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shows.html">Shows</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact_us.html">Contact Us</a>
+          </li>
         </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Wrapper to keep footer at bottom -->
+  <div class="wrapper">
+    <div class="content">
+      <!-- Gallery Section -->
+      <div class="container text-center" style="margin-top: 100px;">
+        <h1>Gallery</h1>
+        <h2>Khiladi 2025</h2>        
+        <!-- Collage of  Photos -->
+        <div class="collage">
+          <img src="images/Groups/Copy of Dhamil Sanjana Pranav.png" alt="Placeholder 1">
+          <img src="images/Groups/Copy of Arya Devansh Richard.png" alt="Placeholder 2">
+          <img src="images/Groups/Copy of Jaya Rishi.png" alt="Placeholder 3">
+          <img src="images/Groups/Copy of Ex Core.png" alt="Placeholder 4">
+          <img src="images/Groups/Copy of Khiladi Posters Edited (11).png" alt="Placeholder 5">
+          <img src="images/Groups/Copy of Katha and Sastha.png" alt="Placeholder 6">
+          <!-- Add more images here as needed -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+      <p>&copy; 2025 Naacho Dance Company. All rights reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="https://www.facebook.com/PrincetonNaacho/" class="text-white">Facebook</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/princeton_naacho/" class="text-white">Instagram</a>
+        </li>
+        <li class="list-inline-item">
+          <a href="https://www.youtube.com/@PrincetonNaacho" class="text-white">YouTube</a>
+        </li>
+      </ul>
     </footer>
-
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>
+  
+  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

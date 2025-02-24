@@ -1,72 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Naacho Dance Company</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Fonts: Raleway, Montserrat, Nunito -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
-    <!-- Tab Icon -->
-    <link rel="icon" type="image/png" href="pictures/logo.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Naacho Dance Company</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Fonts: Raleway, Montserrat, Nunito -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,300,700" rel="stylesheet" type="text/css">
+  <!-- Tab Icon -->
+  <link rel="icon" type="image/png" href="pictures/logo.png" />
+  <style>
+    /* Full height and sticky footer using Flexbox */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .content {
+      flex: 1;
+    }
+    /* Global styles */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Raleway', 'Montserrat', 'Nunito', sans-serif;
+    }
+    .container {
+      background-color: #000;
+    }
+    /* Navbar styles */
+    .navbar {
+      background-color: #000 !important;
+    }
+    .navbar-brand img {
+      height: 40px;
+    }
+    .nav-link {
+      color: #fff !important;
+    }
+    .nav-link:hover,
+    .nav-item.active .nav-link {
+      color: #e60000 !important;
+    }
+    /* Footer styles */
+    footer {
+      background-color: #000 !important;
+    }
+    /* Contact form styles */
+    .contact-form {
+      max-width: 600px;
+      margin: 40px auto; /* extra vertical space above and below */
+      text-align: left;
+    }
+    .contact-form label {
+      font-weight: bold;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      background-color: #222;
+      border: 1px solid #555;
+      color: #fff;
+    }
+    .contact-form button {
+      background-color: #e60000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .contact-form button:hover {
+      background-color: #cc0000;
+    }
+  </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="homePage.html">Naacho</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="homePage.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="members.html">Members</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="shows.html">Shows</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="contact_us.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Contact Us Section -->
-    <div class="container text-center" style="margin-top: 100px;">
-        <h1>Contact Us</h1>
-        <p>Contact information and form...</p>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Naacho Dance Company. All rights reserved.</p>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#" class="text-white">Facebook</a></li>
-            <li class="list-inline-item"><a href="#" class="text-white">Instagram</a></li>
-            <li class="list-inline-item"><a href="#" class="text-white">Twitter</a></li>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="homePage.html">
+        <img src="pictures/logo.png" alt="Naacho Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+              data-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="homePage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="members.html">Members</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shows.html">Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact_us.html">Contact Us</a>
+          </li>
         </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Wrapper to keep footer at bottom -->
+  <div class="wrapper">
+    <div class="content">
+      <!-- Contact Us Section -->
+      <div class="container text-center" style="margin-top: 100px;">
+        <h1>Contact Us</h1>
+        <p>Have a question or inquiry? Fill out the form below and we’ll get back to you!</p>
+        <div class="contact-form">
+          <form action="mailto:naachoprinceton@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="inquiry">Inquiry:</label>
+            <textarea id="inquiry" name="inquiry" rows="5" required></textarea>
+            
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="text-white text-center py-3">
+      <p>&copy; 2025 Naacho Dance Company. All rights reserved.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="https://www.facebook.com/PrincetonNaacho/" class="text-white">Facebook</a></li>
+        <li class="list-inline-item"><a href="https://www.instagram.com/princeton_naacho/" class="text-white">Instagram</a></li>
+        <li class="list-inline-item"><a href="https://www.youtube.com/@PrincetonNaacho" class="text-white">YouTube</a></li>
+      </ul>
     </footer>
-
-    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </div>
+  
+  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
